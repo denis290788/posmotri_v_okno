@@ -78,8 +78,8 @@ ol {
 }
 
 .search-form {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    justify-content: space-between;
     gap: 40px;
 }
 
@@ -132,7 +132,6 @@ ol {
 }
 
 .search-form__pseudo-checkbox {
-    /* position: relative; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -149,8 +148,6 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox::after {
     content: "";
     width: 15px;
     height: 15px;
-    /* position: absolute;
-    inset: 1px; */
     background-color: #fff;
 }
 
@@ -187,6 +184,7 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox::after {
 }
 
 .search-form__submit-button {
+    min-width: 194px;
     min-height: 34px;
     align-self: end;
 }
