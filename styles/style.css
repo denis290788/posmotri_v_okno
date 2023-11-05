@@ -190,7 +190,10 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox::after {
 }
 
 .content__details {
-    min-width: 422px;
+    /* ранее была установлена мин ширина блока с учетом скрола
+    min-width: 422px; */
+
+    min-width: 415px;
 }
 
 .title {
@@ -215,7 +218,7 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox::after {
 }
 
 .content__list-item:not(:last-of-type) {
-    margin-bottom: 36px;
+    margin-bottom: 30px;
 }
 
 .content__card-link {
@@ -226,12 +229,16 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox::after {
 }
 
 .content__video-card {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
+    height: 107px;
+    display: flex;
+}
+
+.content__video-card-description-container {
+    max-width: 199px;
+    flex-grow: 1;
 }
 
 .content__video-card-title {
-    max-width: 200px;
     margin-bottom: 6px;
     color: #fff;
     font-family: Oswald, sans-serif;
@@ -245,12 +252,11 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox::after {
 }
 
 .content__video-card-description {
-    max-width: 200px;
     color: #fff;
     font-family: Fira Sans Condensed, sans-serif;
     font-size: 18px;
     font-weight: 400;
-    line-height: 14px;
+    line-height: 16.2px;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
@@ -274,6 +280,7 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox::after {
 }
 
 .content__video-card-thumbnail {
+    align-self: center;
     width: 194px;
     height: 103px;
     object-fit: cover;
