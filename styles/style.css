@@ -189,6 +189,10 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox::after {
     align-self: end;
 }
 
+.content__details {
+    min-width: 422px;
+}
+
 .title {
     margin-bottom: 18px;
     color: #fff;
