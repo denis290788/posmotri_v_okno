@@ -190,10 +190,7 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox::after {
 }
 
 .content__details {
-    /* ранее была установлена мин ширина блока с учетом скрола
-    min-width: 422px; */
-
-    min-width: 415px;
+    width: 399px;
 }
 
 .title {
@@ -215,6 +212,7 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox::after {
     position: relative;
     height: 298px;
     overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .content__list-item:not(:last-of-type) {
@@ -229,7 +227,6 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox::after {
 }
 
 .content__video-card {
-    height: 107px;
     display: flex;
 }
 
