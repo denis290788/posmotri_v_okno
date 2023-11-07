@@ -228,11 +228,12 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox::after {
 
 .content__video-card {
     display: flex;
+    justify-content: space-between;
 }
 
 .content__video-card-description-container {
-    max-width: 199px;
     flex-grow: 1;
+    max-width: 186px;
 }
 
 .content__video-card-title {
