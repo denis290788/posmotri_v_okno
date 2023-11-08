@@ -212,7 +212,6 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox::after {
     position: relative;
     height: 298px;
     overflow-y: auto;
-    overflow-x: hidden;
 }
 
 .content__list-item:not(:last-of-type) {
@@ -261,6 +260,10 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox::after {
 }
 
 .content__card-link:active {
+    background-color: #545050;
+}
+
+.content__card-link_current {
     background-color: #545050;
 }
 
